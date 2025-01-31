@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run compile.bat before debugging",
+            "type": "cppvsdbg",  // or any debugger you're using
+            "request": "launch",
+            "program": "${workspaceFolder}/your_program.exe",  // Adjust for your program
+            "preLaunchTask": "Run compile.bat",  // This runs the batch file before launching the debugger
+            "miDebuggerPath": "path-to-mi-debugger"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run compile.bat",
+            "type": "shell",
+            "command": "compile.bat",  // Path to your batch file (can use relative or absolute path)
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "cmd.exe",
+                "args": ["/c", "compile.bat"]
+            }
+        }
+    ]
+}

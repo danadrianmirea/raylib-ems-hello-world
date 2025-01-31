@@ -1,25 +1,24 @@
 #include "raylib.h"
 
-int main(void)
+int main(void) 
 {
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+  const int screenWidth = 800;
+  const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
-    SetTargetFPS(60);              
+  InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+  SetTargetFPS(60);
 
-    while (!WindowShouldClose())   
-        // Update
+  while (!WindowShouldClose()) 
+  {
+    // Update
 
-        // Draw
-        BeginDrawing();
+    // Draw
+    BeginDrawing();
+    ClearBackground(GREEN);
+    DrawText("Hello world!", 350, 200, 20, BLACK);
+    EndDrawing();
+  }
 
-            ClearBackground(SKYBLUE);
-
-            DrawText("Hello world!", 190, 200, 20, LIGHTGRAY);
-
-        EndDrawing();    }
-
-    CloseWindow();
-    return 0;
+  CloseWindow();
+  return 0;
 }
